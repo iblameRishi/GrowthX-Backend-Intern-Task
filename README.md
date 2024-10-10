@@ -81,14 +81,49 @@ Ensure you have the following installed on your system:
 ### User Endpoints
 
 - **POST /user/register**: Register a new user.
+   - Send data in this format: raw
+     ```
+     {
+        "username": "testusername",
+        "password": "testpassword"
+     }
+     ```
 - **POST /user/login**: User login to obtain a JWT token.
+   - Send data in this format: form-data
+     ```
+     {
+        "username": "testusername",
+        "password": "testpassword"
+     }
+     ```
 - **POST /user/upload**: Upload an assignment (protected route - requires valid JWT).
+   - Send data in this format: raw
+     ```
+     {
+        "task": "test task",
+        "admin": "[admin id]",
+     }
+     ```
 - **GET /user/admins**: Fetch all admins (protected route - requires valid JWT).
 
 ### Admin Endpoints
 
 - **POST /admin/register**: Register a new admin.
+   - Send data in this format: raw
+     ```
+     {
+        "username": "testusername",
+        "password": "testpassword"
+     }
+     ```
 - **POST /admin/login**: Admin login to obtain a JWT token.
+   - Send data in this format: form-data
+     ```
+     {
+        "username": "testusername",
+        "password": "testpassword"
+     }
+     ```
 - **GET /admin/assignments**: View assignments tagged to the admin (protected route - requires valid JWT).
 - **POST /admin/assignments/{id}/accept**: Accept an assignment (protected route - requires valid JWT).
 - **POST /admin/assignments/{id}/reject**: Reject an assignment (protected route - requires valid JWT).
