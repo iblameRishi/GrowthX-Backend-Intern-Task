@@ -4,13 +4,14 @@ from app.database.database import init_db
 
 app = FastAPI()
 
-# Initialize the database
+# MongoDB Initialization
 init_db()
 
-# Include routers
+# Routers for each type of user endpoint - better for readability and maintenance
 app.include_router(users.router)
 app.include_router(admins.router)
 
+# Test Endpoint
 @app.get("/")
 def test():
     return {"Hello": "World"}
