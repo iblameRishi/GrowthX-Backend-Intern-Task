@@ -81,7 +81,7 @@ Ensure you have the following installed on your system:
 ### User Endpoints
 
 - **POST /user/register**: Register a new user.
-   - Send data in this format: raw
+   - Send data in this format: `raw` (in postman)
      ```
      {
         "username": "testusername",
@@ -89,7 +89,7 @@ Ensure you have the following installed on your system:
      }
      ```
 - **POST /user/login**: User login to obtain a JWT token.
-   - Send data in this format: form-data
+   - Send data in this format: `form-data` (in postman)
      ```
      {
         "username": "testusername",
@@ -97,7 +97,7 @@ Ensure you have the following installed on your system:
      }
      ```
 - **POST /user/upload**: Upload an assignment (protected route - requires valid JWT).
-   - Send data in this format: raw
+   - Send data in this format: `raw` (in postman)
      ```
      {
         "task": "test task",
@@ -109,7 +109,7 @@ Ensure you have the following installed on your system:
 ### Admin Endpoints
 
 - **POST /admin/register**: Register a new admin.
-   - Send data in this format: raw
+   - Send data in this format: `raw` (in postman)
      ```
      {
         "username": "testusername",
@@ -117,7 +117,7 @@ Ensure you have the following installed on your system:
      }
      ```
 - **POST /admin/login**: Admin login to obtain a JWT token.
-   - Send data in this format: form-data
+   - Send data in this format: `form-data` (in postman)
      ```
      {
         "username": "testusername",
