@@ -29,7 +29,7 @@ Ensure you have the following installed on your system:
 
 2. **Environment Variables**
 
-   Create a `.env` file in the root directory of the project and add the following environment variables:
+   Env variables are already in the docker-compose but if they dont work, create a `.env` file in the root directory of the project and add the following environment variables:
 
    ```plaintext
    SECRET_KEY=09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7
